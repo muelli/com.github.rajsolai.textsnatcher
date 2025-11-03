@@ -39,9 +39,13 @@ modules:
 
   - name: imlib2
     sources:
-      - type: git
-        url: https://github.com/kkoudev/imlib2.git
-        commit: 0f6782427dd4f49a4d1da03bec133e6a27f994a3
+      - type: archive
+        url: https://downloads.sourceforge.net/project/enlightenment/imlib2-src/1.12.5/imlib2-1.12.5.tar.gz
+        sha256: 097d40aee4cf4a349187615b796b37db1652fcc84bb0e8d5c0b380ab651d9095
+        x-checker-data:
+          type: anitya
+          project-id: 21676
+          url-template: https://downloads.sourceforge.net/project/enlightenment/imlib2-src/$version/imlib2-$version.tar.gz
 
   - name: scrot
     sources:

@@ -83,8 +83,14 @@ modules:
       - --enable-legacy
     sources:
       - type: archive
-        url: https://github.com/tesseract-ocr/tesseract/archive/4.1.1.tar.gz
-        sha256: 2a66ff0d8595bff8f04032165e6c936389b1e5727c3ce5a27b3e059d218db1cb
+        url: https://github.com/tesseract-ocr/tesseract/archive/5.5.0.tar.gz
+        sha256: f2fb34ca035b6d087a42875a35a7a5c4155fa9979c6132365b1e5a28ebc3fc11
+        x-checker-data:
+          type: anitya
+          project-id: 4954
+          stable-only: true
+          url-template: https://github.com/tesseract-ocr/tesseract/archive/$version.tar.gz
+
       - type: file
         url: https://github.com/tesseract-ocr/tessdata_best/raw/main/eng.traineddata
         sha256: 8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba

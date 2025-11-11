@@ -37,7 +37,7 @@ modules:
     buildsystem: meson
     builddir: true
     config-opts:
-      - "-Dbackend-gtk3=true"
+      - "-Dbackend-gtk3=enabled"
       - "-Ddocs=false"
       - "-Dtests=false"
     sources:

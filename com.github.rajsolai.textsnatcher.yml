@@ -37,8 +37,9 @@ modules:
     buildsystem: meson
     builddir: true
     config-opts:
-      - "-Dbackends=gtk3"
+      - "-Dbackend-gtk3=true"
       - "-Ddocs=false"
+      - "-Dtests=false"
     sources:
       - type: archive
         url: https://github.com/flatpak/libportal/archive/0.9.1.tar.gz

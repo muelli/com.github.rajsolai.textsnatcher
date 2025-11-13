@@ -65,7 +65,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/muelli/TextSnatcher.git
-        commit: 9e652ae49dcf449b8452c8b864b7edfc501b6e7b
+        commit: 1d07026ab04bdbbcaca145d3f1e19b485c187e4b
 
   - name: leptonica
     rm-configure: true

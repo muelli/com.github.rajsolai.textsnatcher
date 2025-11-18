@@ -46,8 +46,14 @@ modules:
   - name: scrot
     sources:
       - type: archive
-        url: https://github.com/resurrecting-open-source-projects/scrot/archive/refs/tags/1.7.tar.gz
-        sha256: e4ff764f93ea98018d46192c35bd34eeb577040ac6e217aa0d83b2a63d88f66b
+        archive-type: tar-gzip
+        url: https://api.github.com/repos/resurrecting-open-source-projects/scrot/tarball/1.12.1
+        sha256: b4087954fa19f2adf16e90f6d3ba6c20ae41000591501933b82a2ce7d2c23cfa
+        x-checker-data:
+          type: json
+          url: https://api.github.com/repos/resurrecting-open-source-projects/scrot/releases/latest
+          version-query: .tag_name
+          url-query: .tarball_url
 
   - name: libportal
     buildsystem: meson
